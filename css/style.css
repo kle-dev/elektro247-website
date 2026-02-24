@@ -149,17 +149,27 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.3rem); }
 /* --- Animations (mobile-first, performant) --- */
 .anim-up {
   opacity: 0;
-  transform: translateY(32px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(40px) scale(0.97);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
 }
 .anim-up.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0) scale(1);
 }
 .anim-delay-1 { transition-delay: 0.15s; }
 .anim-delay-2 { transition-delay: 0.3s; }
 .anim-delay-3 { transition-delay: 0.45s; }
+
+/* Card-specific animations */
+.service-card.anim-up { transform: translateY(48px) scale(0.95); }
+.project-card.anim-up { transform: translateY(36px) scale(0.96); }
+.review-card.anim-up { transform: translateY(30px) scale(0.97); }
+.partner-card.anim-up { transform: translateX(-24px); transform-origin: left; }
+.partner-card.anim-up.visible { transform: translateX(0); }
+.cert-card.anim-up { transform: translateY(32px) rotate(-1deg) scale(0.97); }
+.cert-card.anim-up.visible { transform: translateY(0) rotate(0) scale(1); }
 
 /* Pulse dot */
 .pulse-dot {
