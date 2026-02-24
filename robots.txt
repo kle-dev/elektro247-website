@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /css/
+
+Sitemap: https://www.elektro247.de/sitemap.xml
