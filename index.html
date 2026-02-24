@@ -1002,10 +1002,16 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
     document.querySelectorAll('.anim-up').forEach(function(el) {
-      observer.observe(el);
+      // Elements above the fold: show immediately
+      var rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight) {
+        el.classList.add('visible');
+      } else {
+        observer.observe(el);
+      }
     });
 
     // Dynamic year
