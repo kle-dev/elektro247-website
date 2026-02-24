@@ -31,7 +31,12 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#111111">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
@@ -129,35 +134,8 @@
 </head>
 <body>
 
-  <!-- ===== Top Bar ===== -->
-  <div class="top-bar" role="banner">
-    <div class="container">
-      <div class="top-bar-left">
-        <a href="tel:+4925159068427" aria-label="Anrufen">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          0251 / 590 684 27
-        </a>
-        <a href="mailto:info@elektro247.de" class="hide-mobile" aria-label="E-Mail senden">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          info@elektro247.de
-        </a>
-        <span class="hide-mobile" style="display:inline-flex;align-items:center;gap:0.35rem;">
-          <span class="pulse-dot"></span> 24/7 erreichbar
-        </span>
-      </div>
-      <div class="top-bar-right">
-        <a href="https://www.facebook.com/Elektro247" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-        </a>
-        <a href="https://www.instagram.com/elektro247" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
   <!-- ===== Navigation ===== -->
-  <header class="nav-header" id="nav">
+  <header class="site-nav" id="nav">
     <div class="container">
       <nav class="nav-inner" aria-label="Hauptnavigation">
         <a href="#home" class="nav-logo" aria-label="Elektro 24/7 — Startseite">
@@ -166,16 +144,16 @@
 
         <div class="nav-links">
           <a href="#leistungen">Leistungen</a>
-          <a href="#ueber-uns">Über uns</a>
+          <a href="#projekte">Projekte</a>
+          <a href="#zertifikate">Zertifikate</a>
           <a href="#bewertungen">Bewertungen</a>
-          <a href="#einsatzgebiet">Einsatzgebiet</a>
           <a href="#kontakt">Kontakt</a>
         </div>
 
         <div class="nav-cta">
           <a href="tel:+4925159068427" class="nav-phone" aria-label="Jetzt anrufen">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-            <span class="hide-mobile-text">0251 / 590 684 27</span>
+            <span>0251 / 590 684 27</span>
           </a>
         </div>
 
@@ -187,439 +165,429 @@
       </nav>
     </div>
 
-    <!-- Mobile Nav -->
-    <nav class="nav-mobile" id="mobile-nav" aria-label="Mobile Navigation">
-      <div class="nav-mobile-header">
-        <img src="images/logo.png" alt="Elektro 24/7" class="nav-mobile-logo">
-        <button class="nav-mobile-close" aria-label="Menü schließen" id="nav-mobile-close">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-        </button>
-      </div>
-      <div class="nav-mobile-links">
-        <a href="#leistungen"><span class="nav-mobile-num">01</span>Leistungen</a>
-        <a href="#ueber-uns"><span class="nav-mobile-num">02</span>Über uns</a>
-        <a href="#bewertungen"><span class="nav-mobile-num">03</span>Bewertungen</a>
-        <a href="#einsatzgebiet"><span class="nav-mobile-num">04</span>Einsatzgebiet</a>
-        <a href="#kontakt"><span class="nav-mobile-num">05</span>Kontakt</a>
-      </div>
-      <div class="nav-mobile-footer">
-        <a href="tel:+4925159068427" class="nav-mobile-cta-btn">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          Jetzt anrufen
-        </a>
-        <p class="nav-mobile-contact-info">0251 / 590 684 27</p>
-      </div>
-    </nav>
   </header>
 
+  <!-- Mobile Nav (outside header to avoid backdrop-filter containing block) -->
+  <nav class="nav-mobile" id="mobile-nav" aria-label="Mobile Navigation">
+    <div class="nav-mobile-header">
+      <img src="images/logo.png" alt="Elektro 24/7" class="nav-mobile-logo">
+      <button class="nav-mobile-close" aria-label="Menü schließen" id="nav-mobile-close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="nav-mobile-links">
+      <a href="#leistungen"><span class="nav-mobile-num">01</span>Leistungen</a>
+      <a href="#projekte"><span class="nav-mobile-num">02</span>Projekte</a>
+      <a href="#zertifikate"><span class="nav-mobile-num">03</span>Zertifikate</a>
+      <a href="#bewertungen"><span class="nav-mobile-num">04</span>Bewertungen</a>
+      <a href="#kontakt"><span class="nav-mobile-num">05</span>Kontakt</a>
+    </div>
+    <div class="nav-mobile-footer">
+      <a href="tel:+4925159068427" class="nav-mobile-cta-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Jetzt anrufen
+      </a>
+      <p class="nav-mobile-contact-info">0251 / 590 684 27</p>
+    </div>
+  </nav>
+
   <!-- ===== Hero ===== -->
-  <section class="hero section" id="home">
-    <div class="hero-accent" aria-hidden="true"></div>
+  <section class="hero" id="home">
     <div class="container">
-      <p class="label">
-        <span class="pulse-dot"></span>
-        Elektromeisterbetrieb in Münster
-      </p>
-      <h1>Ihr Elektromeister in Münster — <em>rund um die Uhr.</em></h1>
-      <p class="hero-sub">
-        Professionelle Elektroinstallation, Smart Home Lösungen &amp; 24/7 Notdienst.
-        Zertifizierter Meisterbetrieb mit über 10 Jahren Erfahrung — zuverlässig, fair und kompetent.
-      </p>
-      <div class="hero-actions">
-        <a href="tel:+4925159068427" class="btn btn-primary">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          Jetzt anrufen
-        </a>
-        <a href="https://wa.me/491712836280" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-          <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          WhatsApp
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Trust Bar ===== -->
-  <section class="trust-bar" aria-label="Unsere Vorteile">
-    <div class="container">
-      <div class="trust-item">
-        <div class="trust-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <div class="hero-grid">
+        <div class="hero-content anim-up">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            24/7 erreichbar
+          </div>
+          <h1>Elektrotechnik<br>mit <em>Meisterhand.</em></h1>
+          <p class="hero-sub">Ihr zertifizierter Elektromeisterbetrieb in Münster. Installation, Smart Home, Prüfung &amp; Notdienst — professionell, fair und rund um die Uhr.</p>
+          <div class="hero-actions">
+            <a href="tel:+4925159068427" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              Jetzt anrufen
+            </a>
+            <a href="https://wa.me/491712836280" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark">
+              <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+          <div class="hero-trust">
+            <div class="hero-trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Meisterbetrieb
+            </div>
+            <div class="hero-trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              10+ Jahre
+            </div>
+            <div class="hero-trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              4.8 / 5.0
+            </div>
+          </div>
         </div>
-        <div>
-          <strong>Meisterbetrieb</strong>
-          <small>Zertifizierter Elektromeister</small>
-        </div>
-      </div>
-      <div class="trust-item">
-        <div class="trust-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-        </div>
-        <div>
-          <strong>10+ Jahre Erfahrung</strong>
-          <small>Kompetenz &amp; Know-how</small>
-        </div>
-      </div>
-      <div class="trust-item">
-        <div class="trust-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        </div>
-        <div>
-          <strong>24/7 Notdienst</strong>
-          <small>Immer für Sie da</small>
-        </div>
-      </div>
-      <div class="trust-item">
-        <div class="trust-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-        </div>
-        <div>
-          <strong>Faire Preise</strong>
-          <small>Transparente Abrechnung</small>
+        <div class="hero-visual anim-up anim-delay-1">
+          <div class="hero-image-card">
+            <div class="hero-image-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <div class="hero-image-overlay">
+              <span class="hero-overlay-number">24/7</span>
+              <span class="hero-overlay-text">Notdienst</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Services ===== -->
+  <!-- ===== Leistungen ===== -->
   <section class="services section" id="leistungen">
     <div class="container">
-      <div class="section-header fade-in">
+      <div class="section-label anim-up">
+        <span class="section-num">01</span>
         <span class="label">Unsere Leistungen</span>
-        <h2>Professionelle Elektrotechnik für jeden Bedarf</h2>
-        <p>Von der Elektroinstallation bis zum Smart Home — wir bieten Ihnen alles aus einer Hand.</p>
       </div>
+      <h2 class="section-title anim-up">Was wir für Sie tun.</h2>
 
-      <div class="bento-grid stagger">
-        <!-- Elektroinstallation — Featured -->
-        <div class="bento-card bento-featured">
-          <div class="bento-card-inner">
-            <span class="bento-number">01</span>
-            <div class="bento-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-            </div>
-            <h3>Elektroinstallation</h3>
-            <p>Fachgerechte Elektroinstallation für Neubauten, Altbauten, Wohnungen und Gewerbeobjekte. Von der Planung bis zur Umsetzung — alles aus einer Hand.</p>
-            <ul class="bento-list">
-              <li>Komplett-Installation Neubau &amp; Sanierung</li>
-              <li>Steckdosen, Schalter &amp; Verteilungen</li>
-              <li>Beleuchtungsplanung &amp; -installation</li>
-              <li>Privat- &amp; Gewerbeobjekte</li>
-            </ul>
-            <span class="bento-tag">Privat &amp; Gewerbe</span>
+      <div class="services-grid">
+        <div class="service-card anim-up">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
           </div>
+          <h3>Elektroinstallation</h3>
+          <p>Fachgerechte Installation für Neubauten, Altbauten und Gewerbeobjekte. Von der Planung bis zur Abnahme.</p>
+          <ul>
+            <li>Komplett-Installation &amp; Sanierung</li>
+            <li>Steckdosen, Schalter &amp; Verteilungen</li>
+            <li>Privat- &amp; Gewerbeobjekte</li>
+          </ul>
         </div>
 
-        <!-- Pumpenservice -->
-        <div class="bento-card">
-          <div class="bento-card-inner">
-            <span class="bento-number">02</span>
-            <div class="bento-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
-            </div>
-            <h3>Pumpenservice</h3>
-            <p>Professionelle Wartung und Installation von Abwasserpumpenanlagen.</p>
-            <ul class="bento-list">
-              <li>Wartung Abwasserpumpenanlagen</li>
-              <li>Neuinstallation &amp; Austausch</li>
-              <li>Regelmäßige Inspektionen</li>
-              <li>Störungsbeseitigung</li>
-            </ul>
-            <span class="bento-tag">Wartung &amp; Installation</span>
+        <div class="service-card anim-up anim-delay-1">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
           </div>
+          <h3>Smart Home &amp; KNX</h3>
+          <p>Intelligente Gebäudesteuerung mit KNX. Licht, Heizung, Jalousien und Sicherheit per App steuern.</p>
+          <ul>
+            <li>KNX-Planung &amp; Installation</li>
+            <li>Licht- &amp; Heizungssteuerung</li>
+            <li>App-Fernsteuerung</li>
+          </ul>
         </div>
 
-        <!-- Smart Home -->
-        <div class="bento-card">
-          <div class="bento-card-inner">
-            <span class="bento-number">03</span>
-            <div class="bento-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            </div>
-            <h3>Smart Home &amp; Gebäudeautomation</h3>
-            <p>Intelligente Gebäudesteuerung mit KNX-Systemen.</p>
-            <ul class="bento-list">
-              <li>KNX-Systemplanung &amp; -installation</li>
-              <li>Licht-, Heizung- &amp; Jalousiesteuerung</li>
-              <li>Sicherheits- &amp; Alarmsysteme</li>
-              <li>Fernsteuerung per App</li>
-            </ul>
-            <span class="bento-tag">KNX-zertifiziert</span>
+        <div class="service-card anim-up anim-delay-2">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
           </div>
+          <h3>E-CHECK</h3>
+          <p>Normgerechte Prüfung Ihrer elektrischen Anlagen und Geräte — dokumentiert und zertifiziert.</p>
+          <ul>
+            <li>Prüfung ortsfester Anlagen</li>
+            <li>Prüfung ortsveränderlicher Geräte</li>
+            <li>Dokumentation &amp; Protokoll</li>
+          </ul>
         </div>
 
-        <!-- E-CHECK -->
-        <div class="bento-card">
-          <div class="bento-card-inner">
-            <span class="bento-number">04</span>
-            <div class="bento-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-            </div>
-            <h3>E-CHECK</h3>
-            <p>Normgerechte Prüfung Ihrer elektrischen Anlagen und Geräte — dokumentiert und zertifiziert.</p>
-            <ul class="bento-list">
-              <li>Prüfung ortsfester Anlagen</li>
-              <li>Prüfung ortsveränderlicher Geräte</li>
-              <li>Dokumentation &amp; Prüfprotokoll</li>
-              <li>Für Privat, Gewerbe &amp; Versicherungen</li>
-            </ul>
-            <span class="bento-tag">Sicherheitsprüfung</span>
+        <div class="service-card anim-up">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
           </div>
+          <h3>Pumpenservice</h3>
+          <p>Wartung, Neuinstallation und Austausch von Abwasserpumpenanlagen — zuverlässig und termingerecht.</p>
+          <ul>
+            <li>Wartung &amp; Inspektion</li>
+            <li>Neuinstallation &amp; Austausch</li>
+            <li>Störungsbeseitigung</li>
+          </ul>
         </div>
 
-        <!-- Beleuchtungstechnik — NEW -->
-        <div class="bento-card">
-          <div class="bento-card-inner">
-            <span class="bento-number">05</span>
-            <div class="bento-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2v1"/><path d="M12 7a4 4 0 00-4 4c0 1.5.8 2.8 2 3.4V17h4v-2.6c1.2-.6 2-1.9 2-3.4a4 4 0 00-4-4z"/></svg>
-            </div>
-            <h3>Beleuchtungstechnik</h3>
-            <p>Professionelle Lichtplanung und -installation für Innen- und Außenbereiche.</p>
-            <ul class="bento-list">
-              <li>LED-Beleuchtungssysteme</li>
-              <li>Außen- &amp; Gartenbeleuchtung</li>
-              <li>Lichtplanung &amp; Beratung</li>
-              <li>Energieeffiziente Lösungen</li>
-            </ul>
-            <span class="bento-tag">Lichtplanung</span>
+        <div class="service-card anim-up anim-delay-1">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2v1"/><path d="M12 7a4 4 0 00-4 4c0 1.5.8 2.8 2 3.4V17h4v-2.6c1.2-.6 2-1.9 2-3.4a4 4 0 00-4-4z"/></svg>
           </div>
+          <h3>Beleuchtungstechnik</h3>
+          <p>Professionelle Lichtplanung für Innen- und Außenbereiche. LED-Systeme und energieeffiziente Lösungen.</p>
+          <ul>
+            <li>LED-Systeme</li>
+            <li>Außen- &amp; Gartenbeleuchtung</li>
+            <li>Lichtplanung &amp; Beratung</li>
+          </ul>
         </div>
 
-        <!-- 24h Notdienst — Emergency Banner -->
-        <div class="bento-card bento-emergency">
-          <div class="bento-card-inner">
-            <div class="bento-emergency-layout">
-              <div class="bento-emergency-content">
-                <span class="bento-number">06</span>
-                <div class="bento-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                </div>
-                <h3>24 Stunden Notdienst</h3>
-                <p>Elektrischer Notfall? Wir sind rund um die Uhr für Sie erreichbar. Schnelle Hilfe bei Stromausfällen, Kurzschlüssen und anderen Notfällen.</p>
-                <ul class="bento-list">
-                  <li>Stromausfall-Soforthilfe</li>
-                  <li>Kurzschluss &amp; Sicherungsausfall</li>
-                  <li>Auch abends &amp; am Wochenende</li>
-                  <li>Schnelle Anfahrt in Münster</li>
-                </ul>
-              </div>
-              <div class="bento-emergency-cta">
-                <div class="bento-emergency-pulse">
-                  <span class="pulse-dot"></span>
-                  <span>Jetzt erreichbar</span>
-                </div>
-                <a href="tel:+4925159068427" class="btn btn-primary">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                  Jetzt anrufen
-                </a>
-                <a href="https://wa.me/491712836280" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="border-color:rgba(255,255,255,0.2);">
-                  <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                  WhatsApp
-                </a>
-              </div>
-            </div>
+        <div class="service-card service-emergency anim-up anim-delay-2">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>24h Notdienst</h3>
+          <p>Elektrischer Notfall? Wir sind rund um die Uhr erreichbar. Schnelle Hilfe bei Stromausfällen und Kurzschlüssen.</p>
+          <div class="service-emergency-cta">
+            <span class="pulse-dot"></span>
+            <a href="tel:+4925159068427">0251 / 590 684 27</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== About / Why Choose Us ===== -->
-  <section class="about section" id="ueber-uns">
+  <!-- ===== Referenzprojekte ===== -->
+  <section class="projects section" id="projekte">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-content fade-in">
-          <span class="label">Warum Elektro 24/7?</span>
-          <h2>Ihr zuverlässiger Partner für Elektrotechnik</h2>
-          <p>Als zertifizierter Elektromeisterbetrieb und Premium-E-Marken-Betrieb in Münster stehen wir für Qualität, Zuverlässigkeit und faire Preise. Inhaber Jan van Wesel und sein Team sorgen dafür, dass Ihre Elektroprojekte fachgerecht und termingerecht umgesetzt werden.</p>
+      <div class="section-label anim-up">
+        <span class="section-num">02</span>
+        <span class="label">Referenzprojekte</span>
+      </div>
+      <h2 class="section-title anim-up">Unsere Arbeit spricht<br>für sich.</h2>
 
-          <div class="feature-list">
-            <div class="feature-item">
-              <div class="feature-check">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <div>
-                <strong>Zertifizierter Meisterbetrieb</strong>
-                <span>Eingetragen bei der Handwerkskammer Münster</span>
-              </div>
+      <div class="projects-grid">
+        <div class="project-card project-card--large anim-up">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
             </div>
-            <div class="feature-item">
-              <div class="feature-check">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <div>
-                <strong>Premium E-Marken-Betrieb</strong>
-                <span>Höchste Qualitätsstandards in der Elektrotechnik</span>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-check">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <div>
-                <strong>Individuelle Beratung</strong>
-                <span>Maßgeschneiderte Lösungen für Ihr Projekt</span>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-check">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <div>
-                <strong>Zufriedenheitsgarantie</strong>
-                <span>Erst zufrieden, wenn Sie es sind</span>
-              </div>
-            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Gewerbe</span>
+            <h3>Parkhaus Münster Zentrum</h3>
+            <p>Komplette Elektroinstallation und LED-Beleuchtung für ein 4-stöckiges Parkhaus. Energieeffiziente Lösung mit intelligenter Steuerung und Notbeleuchtung.</p>
           </div>
         </div>
 
-        <div class="stats-grid fade-in" style="align-self:center;">
-          <div class="stat-card">
-            <div class="stat-number">10<em>+</em></div>
-            <span>Jahre Erfahrung</span>
+        <div class="project-card anim-up anim-delay-1">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            </div>
           </div>
-          <div class="stat-card">
-            <div class="stat-number">24<em>/7</em></div>
-            <span>Erreichbarkeit</span>
+          <div class="project-info">
+            <span class="project-tag">Wohnen</span>
+            <h3>Residenz Mischka</h3>
+            <p>Smart Home mit KNX-Gebäudeautomation. Licht, Heizung und Jalousien per App steuerbar.</p>
           </div>
-          <div class="stat-card">
-            <div class="stat-number">100<em>%</em></div>
-            <span>Meisterqualität</span>
+        </div>
+
+        <div class="project-card anim-up anim-delay-2">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            </div>
           </div>
-          <div class="stat-card">
-            <div class="stat-number">5<em>.0</em></div>
-            <span>Google Bewertung</span>
+          <div class="project-info">
+            <span class="project-tag">Gewerbe</span>
+            <h3>Goldberg Office I</h3>
+            <p>Elektroinstallation und Netzwerkverkabelung für 2.400m2 Bürofläche mit modernster Sicherheitstechnik.</p>
+          </div>
+        </div>
+
+        <div class="project-card anim-up">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Gewerbe</span>
+            <h3>Goldberg Office II</h3>
+            <p>Erweiterung des Goldberg-Campus: KNX-gesteuerte Beleuchtung und Klimasteuerung für 1.800m2.</p>
+          </div>
+        </div>
+
+        <div class="project-card anim-up anim-delay-1">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Wohnen</span>
+            <h3>Goldberg Wohnanlage</h3>
+            <p>32 Wohneinheiten mit modernster Elektrotechnik. Gegensprechanlagen, TV/SAT und Glasfaservorbereitung.</p>
+          </div>
+        </div>
+
+        <div class="project-card anim-up anim-delay-2">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Wohnen</span>
+            <h3>Videosport Wohnen</h3>
+            <p>Umbau Gewerbe zu Wohnraum: Komplette Neuverkabelung, Unterverteilungen und Smart Home Integration.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Testimonials ===== -->
-  <section class="testimonials section" id="bewertungen">
+  <!-- ===== Zertifikate ===== -->
+  <section class="certs section" id="zertifikate">
     <div class="container">
-      <div class="section-header">
-        <span class="label">Kundenbewertungen</span>
-        <h2>Was unsere Kunden sagen</h2>
-        <div class="stars" aria-label="5 von 5 Sternen">
-          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      <div class="section-label anim-up">
+        <span class="section-num">03</span>
+        <span class="label">Zertifikate &amp; Qualifikationen</span>
+      </div>
+      <h2 class="section-title anim-up">Geprüfte Qualität für<br>anspruchsvolle Projekte.</h2>
+      <p class="section-subtitle anim-up">Unsere Zertifizierungen garantieren höchste Qualitätsstandards — für Privatkunden und Großprojekte.</p>
+
+      <div class="certs-grid">
+        <div class="cert-card anim-up">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>Meisterbrief</h4>
+          <p>Eingetragener Elektromeisterbetrieb bei der Handwerkskammer Münster</p>
         </div>
-        <p class="rating-text">4.8 Sterne auf Google · 23+ Bewertungen</p>
+
+        <div class="cert-card anim-up anim-delay-1">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          </div>
+          <h4>E-Marken Partner</h4>
+          <p>Premium-Qualitätszeichen der elektrohandwerklichen Innungsorganisation</p>
+        </div>
+
+        <div class="cert-card anim-up anim-delay-2">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h4>KNX Partner</h4>
+          <p>Zertifizierter KNX-Partner für intelligente Gebäudeautomation und Smart Home</p>
+        </div>
+
+        <div class="cert-card anim-up">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h4>VDE geprüft</h4>
+          <p>Arbeit nach VDE-Normen für maximale Sicherheit und Zuverlässigkeit</p>
+        </div>
+
+        <div class="cert-card anim-up anim-delay-1">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+          </div>
+          <h4>DGUV V3</h4>
+          <p>Berechtigt zur Prüfung elektrischer Betriebsmittel nach DGUV Vorschrift 3</p>
+        </div>
+
+        <div class="cert-card anim-up anim-delay-2">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h4>Innungsbetrieb</h4>
+          <p>Mitglied der Elektroinnung Münster — höchste handwerkliche Standards</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Bewertungen ===== -->
+  <section class="reviews section" id="bewertungen">
+    <div class="container">
+      <div class="section-label anim-up">
+        <span class="section-num">04</span>
+        <span class="label">Kundenstimmen</span>
+      </div>
+      <div class="reviews-header anim-up">
+        <h2 class="section-title">Was unsere Kunden sagen.</h2>
+        <div class="reviews-rating">
+          <div class="stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <span>4.8 / 5.0 auf Google</span>
+        </div>
       </div>
 
-      <div class="testimonials-grid stagger">
-        <div class="testimonial-card">
-          <div class="testimonial-quote">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151C7.563 6.068 6 8.789 6 11h4v10H0z"/></svg>
-          </div>
+      <div class="reviews-grid">
+        <div class="review-card anim-up">
           <blockquote>Ich kann die Firma Elektro 24/7 zu 100% weiterempfehlen. Super schnelle Terminvereinbarung. Die Monteure waren auf die Minute pünktlich, sehr ordentlich, freundlich und sie arbeiten mit hoher Qualität.</blockquote>
-          <div class="testimonial-author">Dennis S.</div>
-          <div class="testimonial-source">golocal Bewertung</div>
+          <div class="review-author">
+            <span class="review-name">Dennis S.</span>
+            <span class="review-source">golocal</span>
+          </div>
         </div>
 
-        <div class="testimonial-card">
-          <div class="testimonial-quote">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151C7.563 6.068 6 8.789 6 11h4v10H0z"/></svg>
-          </div>
+        <div class="review-card anim-up anim-delay-1">
           <blockquote>Echt tolle Elektrofirma. Schnelle Angebotserstellung, kurzfristiger Termin, sehr nette Monteure und ehrlich gesagt war ich überrascht vom fairen Preis. Top</blockquote>
-          <div class="testimonial-author">Christina U.</div>
-          <div class="testimonial-source">golocal Bewertung</div>
+          <div class="review-author">
+            <span class="review-name">Christina U.</span>
+            <span class="review-source">golocal</span>
+          </div>
         </div>
 
-        <div class="testimonial-card">
-          <div class="testimonial-quote">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151C7.563 6.068 6 8.789 6 11h4v10H0z"/></svg>
-          </div>
+        <div class="review-card anim-up anim-delay-2">
           <blockquote>Am Samstag einen Termin für Dienstag bekommen. Der Elektriker war kompetent, schnell und super freundlich!</blockquote>
-          <div class="testimonial-author">Stefan F.</div>
-          <div class="testimonial-source">Google Bewertung</div>
+          <div class="review-author">
+            <span class="review-name">Stefan F.</span>
+            <span class="review-source">Google</span>
+          </div>
         </div>
 
-        <div class="testimonial-card">
-          <div class="testimonial-quote">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151C7.563 6.068 6 8.789 6 11h4v10H0z"/></svg>
-          </div>
+        <div class="review-card anim-up">
           <blockquote>Sehr schnelle Terminvergabe (innerhalb von 48 Stunden), freundliche Mitarbeiter und das ganze zu angemessenen Preisen.</blockquote>
-          <div class="testimonial-author">Luca W.</div>
-          <div class="testimonial-source">Google Bewertung</div>
+          <div class="review-author">
+            <span class="review-name">Luca W.</span>
+            <span class="review-source">Google</span>
+          </div>
         </div>
 
-        <div class="testimonial-card">
-          <div class="testimonial-quote">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151C7.563 6.068 6 8.789 6 11h4v10H0z"/></svg>
-          </div>
+        <div class="review-card anim-up anim-delay-1">
           <blockquote>Sehr schnell ein Termin bekommen! Wirklich faire Preise, gute Arbeit und freundliche Mitarbeiter. Bin sehr glücklich das uns so schnell geholfen werden konnte!</blockquote>
-          <div class="testimonial-author">Melissa</div>
-          <div class="testimonial-source">golocal Bewertung</div>
+          <div class="review-author">
+            <span class="review-name">Melissa</span>
+            <span class="review-source">golocal</span>
+          </div>
         </div>
 
-        <div class="testimonial-card">
-          <div class="testimonial-quote">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151C7.563 6.068 6 8.789 6 11h4v10H0z"/></svg>
-          </div>
+        <div class="review-card anim-up anim-delay-2">
           <blockquote>Schnelle Terminvereinbarung und die Arbeit wurde einwandfrei durchgeführt. Immer wieder gerne!</blockquote>
-          <div class="testimonial-author">Monique</div>
-          <div class="testimonial-source">Google Bewertung</div>
+          <div class="review-author">
+            <span class="review-name">Monique</span>
+            <span class="review-source">Google</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Service Area ===== -->
+  <!-- ===== Einsatzgebiet ===== -->
   <section class="area section" id="einsatzgebiet">
     <div class="container">
       <div class="area-inner">
-        <div class="area-content fade-in">
-          <span class="label">Einsatzgebiet</span>
-          <h2>Ihr Elektriker in Münster &amp; Umgebung</h2>
+        <div class="area-content anim-up">
+          <div class="section-label">
+            <span class="section-num">05</span>
+            <span class="label">Einsatzgebiet</span>
+          </div>
+          <h2 class="section-title">Ihr Elektriker in Münster &amp; Umgebung.</h2>
           <p>Wir sind in Münster und dem gesamten Münsterland für Sie im Einsatz. Ob Neubau, Sanierung oder Notfall — wir kommen schnell und zuverlässig zu Ihnen.</p>
 
           <div class="area-tags">
-            <span class="area-tag">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3" fill="white"/></svg>
-              Münster
-            </span>
-            <span class="area-tag">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3" fill="white"/></svg>
-              Greven
-            </span>
-            <span class="area-tag">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3" fill="white"/></svg>
-              Telgte
-            </span>
-            <span class="area-tag">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3" fill="white"/></svg>
-              Warendorf
-            </span>
-            <span class="area-tag">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3" fill="white"/></svg>
-              Havixbeck
-            </span>
-            <span class="area-tag">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3" fill="white"/></svg>
-              Senden
-            </span>
-            <span class="area-tag">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3" fill="white"/></svg>
-              Altenberge
-            </span>
-            <span class="area-tag">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3" fill="white"/></svg>
-              Münsterland
-            </span>
+            <span class="area-tag">Münster</span>
+            <span class="area-tag">Greven</span>
+            <span class="area-tag">Telgte</span>
+            <span class="area-tag">Warendorf</span>
+            <span class="area-tag">Havixbeck</span>
+            <span class="area-tag">Senden</span>
+            <span class="area-tag">Altenberge</span>
+            <span class="area-tag">Münsterland</span>
           </div>
         </div>
 
-        <div class="area-map fade-in">
+        <div class="area-map anim-up anim-delay-1">
           <iframe
             src="https://maps.google.com/maps?q=Elektro+24/7,+Schleebruggenkamp+4,+48159+Munster,+Deutschland&t=&z=14&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="100%"
-            style="border:0; border-radius: var(--radius);"
+            style="border:0; border-radius: 12px;"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -631,26 +599,22 @@
   </section>
 
   <!-- ===== Contact CTA ===== -->
-  <section class="cta-section section" id="kontakt">
+  <section class="cta section" id="kontakt">
     <div class="container">
-      <h2>Bereit für Ihr Projekt?</h2>
-      <p>Kontaktieren Sie uns jetzt für eine kostenlose Erstberatung. Wir freuen uns auf Ihre Anfrage.</p>
-
-      <div class="cta-buttons">
-        <a href="tel:+4925159068427" class="btn btn-white">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          Jetzt anrufen
-        </a>
-        <a href="https://wa.me/491712836280" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark" style="border-color:rgba(255,255,255,0.3);color:var(--white);">
-          <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          WhatsApp
-        </a>
-        <a href="mailto:info@elektro247.de" class="btn btn-outline-dark" style="border-color:rgba(255,255,255,0.3);color:var(--white);">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          E-Mail
-        </a>
+      <div class="cta-inner anim-up">
+        <div class="cta-content">
+          <h2>Bereit für Ihr Projekt?</h2>
+          <p>Kontaktieren Sie uns jetzt für eine kostenlose Erstberatung.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="tel:+4925159068427" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Jetzt anrufen
+          </a>
+          <a href="https://wa.me/491712836280" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark">WhatsApp</a>
+          <a href="mailto:info@elektro247.de" class="btn btn-outline-dark">E-Mail</a>
+        </div>
       </div>
-
     </div>
   </section>
 
@@ -658,7 +622,6 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
-        <!-- Brand -->
         <div class="footer-brand">
           <a href="#home" class="nav-logo" aria-label="Elektro 24/7">
             <img src="images/logo.png" alt="Elektro 24/7" class="footer-logo-img">
@@ -674,31 +637,17 @@
           </div>
         </div>
 
-        <!-- Links -->
-        <div>
-          <h4 class="footer-heading">Leistungen</h4>
-          <div class="footer-links">
-            <a href="#leistungen">Elektroinstallation</a>
-            <a href="#leistungen">Pumpenservice</a>
-            <a href="#leistungen">Smart Home</a>
-            <a href="#leistungen">E-CHECK</a>
-            <a href="#leistungen">24h Notdienst</a>
-          </div>
-        </div>
-
-        <!-- Quick Links -->
         <div>
           <h4 class="footer-heading">Navigation</h4>
           <div class="footer-links">
-            <a href="#home">Startseite</a>
-            <a href="#ueber-uns">Über uns</a>
+            <a href="#leistungen">Leistungen</a>
+            <a href="#projekte">Projekte</a>
+            <a href="#zertifikate">Zertifikate</a>
             <a href="#bewertungen">Bewertungen</a>
-            <a href="#einsatzgebiet">Einsatzgebiet</a>
             <a href="#kontakt">Kontakt</a>
           </div>
         </div>
 
-        <!-- Contact -->
         <div>
           <h4 class="footer-heading">Kontakt</h4>
           <div class="footer-contact-item">
@@ -744,7 +693,7 @@
   (function() {
     'use strict';
 
-    // Mobile Navigation Toggle
+    // Mobile Navigation
     const toggle = document.querySelector('.nav-toggle');
     const mobileNav = document.querySelector('.nav-mobile');
     const mobileClose = document.getElementById('nav-mobile-close');
@@ -768,15 +717,13 @@
     });
 
     mobileClose.addEventListener('click', closeMobileNav);
-
     mobileLinks.forEach(function(link) {
       link.addEventListener('click', closeMobileNav);
     });
 
-    // Navbar scroll shadow
+    // Navbar scroll
     const nav = document.getElementById('nav');
     let ticking = false;
-
     window.addEventListener('scroll', function() {
       if (!ticking) {
         window.requestAnimationFrame(function() {
@@ -787,7 +734,7 @@
       }
     });
 
-    // Intersection Observer for fade-in animations
+    // Intersection Observer for animations
     var observer = new IntersectionObserver(function(entries) {
       entries.forEach(function(entry) {
         if (entry.isIntersecting) {
@@ -795,9 +742,9 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
 
-    document.querySelectorAll('.fade-in, .stagger').forEach(function(el) {
+    document.querySelectorAll('.anim-up').forEach(function(el) {
       observer.observe(el);
     });
 
