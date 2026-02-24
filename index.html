@@ -184,15 +184,26 @@
 
     <!-- Mobile Nav -->
     <nav class="nav-mobile" id="mobile-nav" aria-label="Mobile Navigation">
-      <a href="#leistungen">Leistungen</a>
-      <a href="#ueber-uns">Über uns</a>
-      <a href="#bewertungen">Bewertungen</a>
-      <a href="#einsatzgebiet">Einsatzgebiet</a>
-      <a href="#kontakt">Kontakt</a>
-      <a href="tel:+4925159068427" class="btn btn-primary" style="margin-top:1.5rem;">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        Jetzt anrufen
-      </a>
+      <div class="nav-mobile-header">
+        <img src="images/logo.png" alt="Elektro 24/7" class="nav-mobile-logo">
+        <button class="nav-mobile-close" aria-label="Menü schließen" id="nav-mobile-close">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="nav-mobile-links">
+        <a href="#leistungen"><span class="nav-mobile-num">01</span>Leistungen</a>
+        <a href="#ueber-uns"><span class="nav-mobile-num">02</span>Über uns</a>
+        <a href="#bewertungen"><span class="nav-mobile-num">03</span>Bewertungen</a>
+        <a href="#einsatzgebiet"><span class="nav-mobile-num">04</span>Einsatzgebiet</a>
+        <a href="#kontakt"><span class="nav-mobile-num">05</span>Kontakt</a>
+      </div>
+      <div class="nav-mobile-footer">
+        <a href="tel:+4925159068427" class="nav-mobile-cta-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Jetzt anrufen
+        </a>
+        <p class="nav-mobile-contact-info">0251 / 590 684 27</p>
+      </div>
     </nav>
   </header>
 
@@ -731,21 +742,30 @@
     // Mobile Navigation Toggle
     const toggle = document.querySelector('.nav-toggle');
     const mobileNav = document.querySelector('.nav-mobile');
+    const mobileClose = document.getElementById('nav-mobile-close');
     const mobileLinks = mobileNav.querySelectorAll('a');
+
+    function closeMobileNav() {
+      toggle.setAttribute('aria-expanded', 'false');
+      mobileNav.classList.remove('open');
+      document.body.style.overflow = '';
+    }
 
     toggle.addEventListener('click', function() {
       const expanded = this.getAttribute('aria-expanded') === 'true';
-      this.setAttribute('aria-expanded', !expanded);
-      mobileNav.classList.toggle('open');
-      document.body.style.overflow = expanded ? '' : 'hidden';
+      if (expanded) {
+        closeMobileNav();
+      } else {
+        this.setAttribute('aria-expanded', 'true');
+        mobileNav.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
     });
 
+    mobileClose.addEventListener('click', closeMobileNav);
+
     mobileLinks.forEach(function(link) {
-      link.addEventListener('click', function() {
-        toggle.setAttribute('aria-expanded', 'false');
-        mobileNav.classList.remove('open');
-        document.body.style.overflow = '';
-      });
+      link.addEventListener('click', closeMobileNav);
     });
 
     // Navbar scroll shadow
