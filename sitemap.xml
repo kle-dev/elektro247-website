@@ -7,6 +7,66 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://kle-dev.github.io/elektro247-website/leistungen/elektroinstallation.html</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kle-dev.github.io/elektro247-website/leistungen/smart-home-knx.html</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kle-dev.github.io/elektro247-website/leistungen/e-check.html</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kle-dev.github.io/elektro247-website/leistungen/gewerbliche-projekte.html</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kle-dev.github.io/elektro247-website/leistungen/altbau-sanierung-neuinstallation.html</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kle-dev.github.io/elektro247-website/leistungen/planung-technische-zeichnungen.html</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kle-dev.github.io/elektro247-website/leistungen/leerrohr-kaiser-betonbau.html</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kle-dev.github.io/elektro247-website/leistungen/kundendienst.html</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kle-dev.github.io/elektro247-website/leistungen/inbetriebnahme-elektrosysteme.html</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kle-dev.github.io/elektro247-website/leistungen/ueberpruefung-elektrosysteme.html</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kle-dev.github.io/elektro247-website/impressum.html</loc>
     <lastmod>2026-02-24</lastmod>
     <changefreq>yearly</changefreq>

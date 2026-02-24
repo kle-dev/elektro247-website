@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elektro 24/7 — Ihr Elektromeister in Münster | 24h Notdienst</title>
-  <meta name="description" content="Elektro 24/7 — Ihr zertifizierter Elektromeisterbetrieb in Münster. Elektroinstallation, Smart Home, E-CHECK &amp; 24/7 Notdienst. Jetzt anrufen: 0251 59068427">
-  <meta name="keywords" content="Elektriker Münster, Elektromeister Münster, Elektroinstallation Münster, Smart Home Münster, KNX Münster, E-CHECK Münster, Notdienst Elektriker Münster, Gebäudeautomation, Pumpenservice, Elektro 247">
+  <title>Elektro 24/7 — Ihr Elektromeister in Münster | Gewerbe &amp; Privat</title>
+  <meta name="description" content="Elektro 24/7 — Ihr zertifizierter Elektromeisterbetrieb in Münster. Elektroinstallation, Smart Home, E-CHECK, Planung &amp; gewerbliche Projekte. Jetzt anrufen: 0251 59068427">
+  <meta name="keywords" content="Elektriker Münster, Elektromeister Münster, Elektroinstallation Münster, Smart Home Münster, KNX Münster, E-CHECK Münster, Gewerbliche Elektroinstallation, Gebäudeautomation, Planung Elektrotechnik, Altbausanierung Elektro, Elektro 247">
   <meta name="author" content="Elektro 24/7 — Jan van Wesel">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.elektro247.de/">
@@ -13,7 +13,7 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Elektro 24/7 — Ihr Elektromeister in Münster">
-  <meta property="og:description" content="Professionelle Elektroinstallation, Smart Home & 24/7 Notdienst in Münster. Meisterbetrieb mit 10+ Jahren Erfahrung.">
+  <meta property="og:description" content="Professionelle Elektroinstallation, Smart Home &amp; gewerbliche Projekte in Münster. Meisterbetrieb mit 10+ Jahren Erfahrung.">
   <meta property="og:url" content="https://www.elektro247.de/">
   <meta property="og:site_name" content="Elektro 24/7">
   <meta property="og:locale" content="de_DE">
@@ -25,7 +25,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Elektro 24/7 — Ihr Elektromeister in Münster">
-  <meta name="twitter:description" content="Professionelle Elektroinstallation, Smart Home & 24/7 Notdienst in Münster.">
+  <meta name="twitter:description" content="Professionelle Elektroinstallation, Smart Home &amp; gewerbliche Projekte in Münster.">
   <meta name="twitter:image" content="https://kle-dev.github.io/elektro247-website/images/og-preview.png">
 
   <!-- Favicon -->
@@ -48,7 +48,7 @@
     "@type": "Electrician",
     "name": "Elektro 24/7",
     "alternateName": "Elektro247",
-    "description": "Zertifizierter Elektromeisterbetrieb in Münster. Elektroinstallation, Smart Home, Gebäudeautomation, E-CHECK und 24/7 Notdienst.",
+    "description": "Zertifizierter Elektromeisterbetrieb in Münster. Elektroinstallation, Smart Home, Gebäudeautomation, E-CHECK, Planung und gewerbliche Projekte.",
     "url": "https://www.elektro247.de",
     "telephone": "+4925159068427",
     "email": "info@elektro247.de",
@@ -65,12 +65,14 @@
       "latitude": 51.9607,
       "longitude": 7.6261
     },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "07:00",
+        "closes": "18:00"
+      }
+    ],
     "areaServed": [
       { "@type": "City", "name": "Münster" },
       { "@type": "AdministrativeArea", "name": "Münsterland" }
@@ -85,10 +87,14 @@
       "name": "Elektriker-Dienstleistungen",
       "itemListElement": [
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Elektroinstallation" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pumpenservice" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gebäudeautomation / Smart Home" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "E-CHECK" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "24h Notdienst" } }
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Smart Home & KNX" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "E-CHECK & Prüftechnik" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Altbau-Sanierung & Neuinstallation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gewerbliche Projekte" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Planung & Technische Zeichnungen" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Inbetriebnahme von Elektrosystemen" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kundendienst" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Leerrohr (Kaiser Betonbau)" } }
       ]
     },
     "aggregateRating": {
@@ -134,6 +140,19 @@
 </head>
 <body>
 
+  <!-- ===== Banner (optional, for current topics) ===== -->
+  <div class="site-banner" id="site-banner" role="alert">
+    <div class="container">
+      <p class="banner-text">
+        <strong>Neu:</strong> Tesla-zertifizierter Installationsbetrieb — Wallbox-Installation vom Meisterbetrieb.
+        <a href="#partner" class="banner-link">Mehr erfahren</a>
+      </p>
+      <button class="banner-close" aria-label="Banner schließen" id="banner-close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+
   <!-- ===== Navigation ===== -->
   <header class="site-nav" id="nav">
     <div class="container">
@@ -144,9 +163,9 @@
 
         <div class="nav-links">
           <a href="#leistungen">Leistungen</a>
-          <a href="#projekte">Projekte</a>
+          <a href="#projekte">Referenzen</a>
           <a href="#zertifikate">Zertifikate</a>
-          <a href="#bewertungen">Bewertungen</a>
+          <a href="#partner">Partner</a>
           <a href="#kontakt">Kontakt</a>
         </div>
 
@@ -164,7 +183,6 @@
         </button>
       </nav>
     </div>
-
   </header>
 
   <!-- Mobile Nav (outside header to avoid backdrop-filter containing block) -->
@@ -177,10 +195,11 @@
     </div>
     <div class="nav-mobile-links">
       <a href="#leistungen"><span class="nav-mobile-num">01</span>Leistungen</a>
-      <a href="#projekte"><span class="nav-mobile-num">02</span>Projekte</a>
+      <a href="#projekte"><span class="nav-mobile-num">02</span>Referenzen</a>
       <a href="#zertifikate"><span class="nav-mobile-num">03</span>Zertifikate</a>
-      <a href="#bewertungen"><span class="nav-mobile-num">04</span>Bewertungen</a>
-      <a href="#kontakt"><span class="nav-mobile-num">05</span>Kontakt</a>
+      <a href="#partner"><span class="nav-mobile-num">04</span>Partner</a>
+      <a href="#bewertungen"><span class="nav-mobile-num">05</span>Bewertungen</a>
+      <a href="#kontakt"><span class="nav-mobile-num">06</span>Kontakt</a>
     </div>
     <div class="nav-mobile-footer">
       <a href="tel:+4925159068427" class="nav-mobile-cta-btn">
@@ -198,10 +217,10 @@
         <div class="hero-content anim-up">
           <div class="hero-badge">
             <span class="pulse-dot"></span>
-            24/7 erreichbar
+            Meisterbetrieb seit 2014
           </div>
           <h1>Elektrotechnik<br>mit <em>Meisterhand.</em></h1>
-          <p class="hero-sub">Ihr zertifizierter Elektromeisterbetrieb in Münster. Installation, Smart Home, Prüfung &amp; Notdienst — professionell, fair und rund um die Uhr.</p>
+          <p class="hero-sub">Ihr zertifizierter Elektromeisterbetrieb in Münster. Von der Planung bis zur Inbetriebnahme — für Gewerbe und Privat.</p>
           <div class="hero-actions">
             <a href="tel:+4925159068427" class="btn btn-primary">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
@@ -233,8 +252,8 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
             </div>
             <div class="hero-image-overlay">
-              <span class="hero-overlay-number">24/7</span>
-              <span class="hero-overlay-text">Notdienst</span>
+              <span class="hero-overlay-number">Meister</span>
+              <span class="hero-overlay-text">Qualität seit 2014</span>
             </div>
           </div>
         </div>
@@ -251,10 +270,21 @@
       </div>
       <h2 class="section-title anim-up">Was wir für Sie tun.</h2>
 
+      <div class="services-filter anim-up">
+        <button class="filter-btn active" data-filter="all">Alle</button>
+        <button class="filter-btn" data-filter="privat">Privatkunden</button>
+        <button class="filter-btn" data-filter="gewerbe">Gewerbekunden</button>
+      </div>
+
       <div class="services-grid">
-        <div class="service-card anim-up">
+        <!-- Elektroinstallation -->
+        <div class="service-card anim-up" data-segment="privat gewerbe">
           <div class="service-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <div class="service-tags">
+            <span class="service-tag service-tag--privat">Privat</span>
+            <span class="service-tag service-tag--gewerbe">Gewerbe</span>
           </div>
           <h3>Elektroinstallation</h3>
           <p>Fachgerechte Installation für Neubauten, Altbauten und Gewerbeobjekte. Von der Planung bis zur Abnahme.</p>
@@ -263,11 +293,17 @@
             <li>Steckdosen, Schalter &amp; Verteilungen</li>
             <li>Privat- &amp; Gewerbeobjekte</li>
           </ul>
+          <a href="leistungen/elektroinstallation.html" class="service-card-link">Mehr erfahren →</a>
         </div>
 
-        <div class="service-card anim-up anim-delay-1">
+        <!-- Smart Home & KNX -->
+        <div class="service-card anim-up anim-delay-1" data-segment="privat gewerbe">
           <div class="service-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="service-tags">
+            <span class="service-tag service-tag--privat">Privat</span>
+            <span class="service-tag service-tag--gewerbe">Gewerbe</span>
           </div>
           <h3>Smart Home &amp; KNX</h3>
           <p>Intelligente Gebäudesteuerung mit KNX. Licht, Heizung, Jalousien und Sicherheit per App steuern.</p>
@@ -276,129 +312,245 @@
             <li>Licht- &amp; Heizungssteuerung</li>
             <li>App-Fernsteuerung</li>
           </ul>
+          <a href="leistungen/smart-home-knx.html" class="service-card-link">Mehr erfahren →</a>
         </div>
 
-        <div class="service-card anim-up anim-delay-2">
+        <!-- E-CHECK & Prüftechnik -->
+        <div class="service-card anim-up anim-delay-2" data-segment="privat gewerbe">
           <div class="service-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
           </div>
-          <h3>E-CHECK</h3>
-          <p>Normgerechte Prüfung Ihrer elektrischen Anlagen und Geräte — dokumentiert und zertifiziert.</p>
+          <div class="service-tags">
+            <span class="service-tag service-tag--privat">Privat</span>
+            <span class="service-tag service-tag--gewerbe">Gewerbe</span>
+          </div>
+          <h3>E-CHECK &amp; Prüftechnik</h3>
+          <p>Normgerechte Prüfung Ihrer elektrischen Anlagen und Geräte — dokumentiert und zertifiziert nach DGUV V3.</p>
           <ul>
             <li>Prüfung ortsfester Anlagen</li>
             <li>Prüfung ortsveränderlicher Geräte</li>
-            <li>Dokumentation &amp; Protokoll</li>
+            <li>DGUV V3 Dokumentation</li>
           </ul>
+          <a href="leistungen/e-check.html" class="service-card-link">Mehr erfahren →</a>
         </div>
 
-        <div class="service-card anim-up">
+        <!-- Gewerbliche Projekte -->
+        <div class="service-card anim-up" data-segment="gewerbe">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="22" height="16" rx="2"/><path d="M1 10h22"/><path d="M8 6V2h8v4"/></svg>
           </div>
-          <h3>Pumpenservice</h3>
-          <p>Wartung, Neuinstallation und Austausch von Abwasserpumpenanlagen — zuverlässig und termingerecht.</p>
+          <div class="service-tags">
+            <span class="service-tag service-tag--gewerbe">Gewerbe</span>
+          </div>
+          <h3>Gewerbliche Projekte</h3>
+          <p>Komplette Elektroinstallation für Bürogebäude, Systemfertigbau und Großprojekte. Von der Planung bis zur Übergabe.</p>
           <ul>
-            <li>Wartung &amp; Inspektion</li>
-            <li>Neuinstallation &amp; Austausch</li>
-            <li>Störungsbeseitigung</li>
+            <li>Bürogebäude &amp; Parkhäuser</li>
+            <li>Systemfertigbau (Goldbeck, Köster)</li>
+            <li>Schlüsselfertige Elektrotechnik</li>
           </ul>
+          <a href="leistungen/gewerbliche-projekte.html" class="service-card-link">Mehr erfahren →</a>
         </div>
 
-        <div class="service-card anim-up anim-delay-1">
+        <!-- Altbau-Sanierung & Neuinstallation -->
+        <div class="service-card anim-up anim-delay-1" data-segment="privat gewerbe">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2v1"/><path d="M12 7a4 4 0 00-4 4c0 1.5.8 2.8 2 3.4V17h4v-2.6c1.2-.6 2-1.9 2-3.4a4 4 0 00-4-4z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="7.5 4.21 12 6.81 16.5 4.21"/><polyline points="7.5 19.79 7.5 14.6 3 12"/><polyline points="21 12 16.5 14.6 16.5 19.79"/></svg>
           </div>
-          <h3>Beleuchtungstechnik</h3>
-          <p>Professionelle Lichtplanung für Innen- und Außenbereiche. LED-Systeme und energieeffiziente Lösungen.</p>
+          <div class="service-tags">
+            <span class="service-tag service-tag--privat">Privat</span>
+            <span class="service-tag service-tag--gewerbe">Gewerbe</span>
+          </div>
+          <h3>Altbau-Sanierung &amp; Neuinstallation</h3>
+          <p>Komplette Erneuerung der Elektroinstallation in Bestandsgebäuden. Normgerecht und zukunftssicher.</p>
           <ul>
-            <li>LED-Systeme</li>
-            <li>Außen- &amp; Gartenbeleuchtung</li>
-            <li>Lichtplanung &amp; Beratung</li>
+            <li>Komplettsanierung Elektrik</li>
+            <li>Zählerschrank-Erneuerung</li>
+            <li>Bestandsaufnahme &amp; Beratung</li>
           </ul>
+          <a href="leistungen/altbau-sanierung-neuinstallation.html" class="service-card-link">Mehr erfahren →</a>
         </div>
 
-        <div class="service-card service-emergency anim-up anim-delay-2">
+        <!-- Planung & Technische Zeichnungen -->
+        <div class="service-card anim-up anim-delay-2" data-segment="privat gewerbe">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
           </div>
-          <h3>24h Notdienst</h3>
-          <p>Elektrischer Notfall? Wir sind rund um die Uhr erreichbar. Schnelle Hilfe bei Stromausfällen und Kurzschlüssen.</p>
-          <div class="service-emergency-cta">
-            <span class="pulse-dot"></span>
-            <a href="tel:+4925159068427">0251 / 590 684 27</a>
+          <div class="service-tags">
+            <span class="service-tag service-tag--privat">Privat</span>
+            <span class="service-tag service-tag--gewerbe">Gewerbe</span>
           </div>
+          <h3>Planung &amp; Technische Zeichnungen</h3>
+          <p>Professionelle Elektroplanung mit technischen Zeichnungen. Installationspläne, Stromlaufpläne und Verteileraufbau.</p>
+          <ul>
+            <li>Installationspläne &amp; Stromlaufpläne</li>
+            <li>Verteilerplanung</li>
+            <li>Prüf- &amp; Dokumentationsunterlagen</li>
+          </ul>
+          <a href="leistungen/planung-technische-zeichnungen.html" class="service-card-link">Mehr erfahren →</a>
+        </div>
+
+        <!-- Leerrohr (Kaiser Betonbau) -->
+        <div class="service-card anim-up" data-segment="gewerbe">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+          </div>
+          <div class="service-tags">
+            <span class="service-tag service-tag--gewerbe">Gewerbe</span>
+          </div>
+          <h3>Leerrohr (Kaiser Betonbau)</h3>
+          <p>Fachgerechte Leerrohrverlegung in Betonbauteilen. Vorbereitung der Elektroinfrastruktur im Rohbau.</p>
+          <ul>
+            <li>Kaiser Elektro Leerrohrsysteme</li>
+            <li>Betonbau-Integration</li>
+            <li>Rohbau-Elektrovorbereitung</li>
+          </ul>
+          <a href="leistungen/leerrohr-kaiser-betonbau.html" class="service-card-link">Mehr erfahren →</a>
+        </div>
+
+        <!-- Kundendienst -->
+        <div class="service-card anim-up anim-delay-1" data-segment="privat gewerbe">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <div class="service-tags">
+            <span class="service-tag service-tag--privat">Privat</span>
+            <span class="service-tag service-tag--gewerbe">Gewerbe</span>
+          </div>
+          <h3>Kundendienst</h3>
+          <p>Schneller und zuverlässiger Elektro-Kundendienst für Privat- und Geschäftskunden. Reparatur, Wartung und Störungsbeseitigung.</p>
+          <ul>
+            <li>Fehlersuche &amp; Reparatur</li>
+            <li>Wartungsverträge (B2B)</li>
+            <li>Schnelle Reaktionszeiten</li>
+          </ul>
+          <a href="leistungen/kundendienst.html" class="service-card-link">Mehr erfahren →</a>
+        </div>
+
+        <!-- Inbetriebnahme von Elektrosystemen -->
+        <div class="service-card anim-up anim-delay-2" data-segment="gewerbe">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+          </div>
+          <div class="service-tags">
+            <span class="service-tag service-tag--gewerbe">Gewerbe</span>
+          </div>
+          <h3>Inbetriebnahme</h3>
+          <p>Professionelle Inbetriebnahme von Elektrosystemen. Funktionsprüfung, Messprotokoll und Dokumentation.</p>
+          <ul>
+            <li>Erstinbetriebnahme &amp; Messung</li>
+            <li>Protokollerstellung</li>
+            <li>Abnahme &amp; Übergabe</li>
+          </ul>
+          <a href="leistungen/inbetriebnahme-elektrosysteme.html" class="service-card-link">Mehr erfahren →</a>
+        </div>
+
+        <!-- Überprüfung von Elektrosystemen -->
+        <div class="service-card anim-up" data-segment="privat gewerbe">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <div class="service-tags">
+            <span class="service-tag service-tag--privat">Privat</span>
+            <span class="service-tag service-tag--gewerbe">Gewerbe</span>
+          </div>
+          <h3>Überprüfung von Elektrosystemen</h3>
+          <p>Regelmäßige Überprüfung und Wartung Ihrer elektrischen Anlagen. Sicherheit und Normkonformität gewährleistet.</p>
+          <ul>
+            <li>Wiederkehrende Prüfungen</li>
+            <li>Anlagencheck &amp; Bestandsaufnahme</li>
+            <li>Mängelbeseitigung</li>
+          </ul>
+          <a href="leistungen/ueberpruefung-elektrosysteme.html" class="service-card-link">Mehr erfahren →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Referenzprojekte ===== -->
+  <!-- ===== Referenzen & Auftraggeber ===== -->
   <section class="projects section" id="projekte">
     <div class="container">
       <div class="section-label anim-up">
         <span class="section-num">02</span>
-        <span class="label">Referenzprojekte</span>
+        <span class="label">Referenzen &amp; Auftraggeber</span>
       </div>
       <h2 class="section-title anim-up">Unsere Arbeit spricht<br>für sich.</h2>
 
+      <!-- Auftraggeber / Clients -->
+      <h3 class="projects-subheading anim-up">Unsere Auftraggeber</h3>
+      <div class="clients-grid anim-up">
+        <a href="https://www.goldbeck.de" target="_blank" rel="noopener noreferrer" class="client-card">
+          <div class="client-logo">
+            <img src="images/clients/goldbeck.svg" alt="GOLDBECK" class="client-logo-img" loading="lazy">
+          </div>
+        </a>
+        <a href="https://www.sahle-wohnen.de" target="_blank" rel="noopener noreferrer" class="client-card">
+          <div class="client-logo">
+            <img src="images/clients/sahle-wohnen.svg" alt="Sahle Wohnen" class="client-logo-img" loading="lazy">
+          </div>
+        </a>
+        <a href="https://www.koester-bau.de" target="_blank" rel="noopener noreferrer" class="client-card">
+          <div class="client-logo">
+            <img src="images/clients/koester-bau.png" alt="Köster Bau" class="client-logo-img" loading="lazy">
+          </div>
+        </a>
+        <a href="https://www.galeria.de" target="_blank" rel="noopener noreferrer" class="client-card">
+          <div class="client-logo">
+            <img src="images/clients/galeria.svg" alt="GALERIA" class="client-logo-img" loading="lazy">
+          </div>
+        </a>
+      </div>
+
+      <!-- Referenzprojekte -->
+      <h3 class="projects-subheading anim-up">Ausgewählte Projekte</h3>
       <div class="projects-grid">
         <div class="project-card project-card--large anim-up">
           <div class="project-image">
-            <div class="project-placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            </div>
+            <img src="images/projects/parkhaus.jpg" alt="Parkhaus Münster Zentrum — LED-Beleuchtung" loading="lazy">
           </div>
           <div class="project-info">
             <span class="project-tag">Gewerbe</span>
             <h3>Parkhaus Münster Zentrum</h3>
-            <p>Komplette Elektroinstallation und LED-Beleuchtung für ein 4-stöckiges Parkhaus. Energieeffiziente Lösung mit intelligenter Steuerung und Notbeleuchtung.</p>
+            <p>Komplette Elektroinstallation inkl. LED-Beleuchtung für ein 4-stöckiges Parkhaus. Energieeffiziente Steuerung mit Notbeleuchtungssystem nach DIN EN 1838.</p>
           </div>
         </div>
 
         <div class="project-card anim-up anim-delay-1">
           <div class="project-image">
-            <div class="project-placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            </div>
+            <img src="images/projects/smart-home.jpg" alt="Residenz Mischka — Smart Home KNX" loading="lazy">
           </div>
           <div class="project-info">
             <span class="project-tag">Wohnen</span>
             <h3>Residenz Mischka</h3>
-            <p>Smart Home mit KNX-Gebäudeautomation. Licht, Heizung und Jalousien per App steuerbar.</p>
+            <p>Smart Home mit KNX-Gebäudeautomation. Komplette Vernetzung von Licht, Heizung und Jalousien mit App-Steuerung.</p>
           </div>
         </div>
 
         <div class="project-card anim-up anim-delay-2">
           <div class="project-image">
-            <div class="project-placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            </div>
+            <img src="images/projects/buerogebaeude-1.jpg" alt="Goldberg Office I — Bürogebäude Elektroinstallation" loading="lazy">
           </div>
           <div class="project-info">
             <span class="project-tag">Gewerbe</span>
             <h3>Goldberg Office I</h3>
-            <p>Elektroinstallation und Netzwerkverkabelung für 2.400m2 Bürofläche mit modernster Sicherheitstechnik.</p>
+            <p>Elektroinstallation und Netzwerkverkabelung für 2.400m² Bürofläche. Strukturierte Verkabelung nach Cat.7-Standard.</p>
           </div>
         </div>
 
         <div class="project-card anim-up">
           <div class="project-image">
-            <div class="project-placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            </div>
+            <img src="images/projects/buerogebaeude-2.jpg" alt="Goldberg Office II — Konferenzraum Elektrik" loading="lazy">
           </div>
           <div class="project-info">
             <span class="project-tag">Gewerbe</span>
             <h3>Goldberg Office II</h3>
-            <p>Erweiterung des Goldberg-Campus: KNX-gesteuerte Beleuchtung und Klimasteuerung für 1.800m2.</p>
+            <p>Erweiterung des Goldberg-Campus: KNX-gesteuerte Beleuchtung und Klimasteuerung für 1.800m² Bürofläche.</p>
           </div>
         </div>
 
         <div class="project-card anim-up anim-delay-1">
           <div class="project-image">
-            <div class="project-placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            </div>
+            <img src="images/projects/wohnanlage.jpg" alt="Goldberg Wohnanlage — Mehrfamilienhaus Elektrotechnik" loading="lazy">
           </div>
           <div class="project-info">
             <span class="project-tag">Wohnen</span>
@@ -409,14 +561,12 @@
 
         <div class="project-card anim-up anim-delay-2">
           <div class="project-image">
-            <div class="project-placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            </div>
+            <img src="images/projects/loft.jpg" alt="Videosport Wohnen — Loft Umbau Elektrik" loading="lazy">
           </div>
           <div class="project-info">
             <span class="project-tag">Wohnen</span>
             <h3>Videosport Wohnen</h3>
-            <p>Umbau Gewerbe zu Wohnraum: Komplette Neuverkabelung, Unterverteilungen und Smart Home Integration.</p>
+            <p>Gewerbe-zu-Wohnraum-Umbau: Komplette Neuverkabelung, neue Unterverteilungen und Smart Home Integration.</p>
           </div>
         </div>
       </div>
@@ -434,53 +584,133 @@
       <p class="section-subtitle anim-up">Unsere Zertifizierungen garantieren höchste Qualitätsstandards — für Privatkunden und Großprojekte.</p>
 
       <div class="certs-grid">
-        <div class="cert-card anim-up">
+        <a href="certs/meisterbrief-hwk-muenster-2014.pdf" target="_blank" rel="noopener noreferrer" class="cert-card anim-up">
           <div class="cert-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
           <h4>Meisterbrief</h4>
-          <p>Eingetragener Elektromeisterbetrieb bei der Handwerkskammer Münster</p>
-        </div>
+          <p>Handwerkskammer Münster, 2014</p>
+          <span class="cert-link-hint">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            PDF ansehen
+          </span>
+        </a>
 
-        <div class="cert-card anim-up anim-delay-1">
+        <a href="certs/ausweis-strom-stadtnetze-muenster.pdf" target="_blank" rel="noopener noreferrer" class="cert-card anim-up anim-delay-1">
           <div class="cert-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
           </div>
-          <h4>E-Marken Partner</h4>
-          <p>Premium-Qualitätszeichen der elektrohandwerklichen Innungsorganisation</p>
-        </div>
+          <h4>Ausweis Strom</h4>
+          <p>Elektro-Installateurverzeichnis, Stadtnetze Münster</p>
+          <span class="cert-link-hint">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            PDF ansehen
+          </span>
+        </a>
 
-        <div class="cert-card anim-up anim-delay-2">
-          <div class="cert-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          </div>
-          <h4>KNX Partner</h4>
-          <p>Zertifizierter KNX-Partner für intelligente Gebäudeautomation und Smart Home</p>
-        </div>
-
-        <div class="cert-card anim-up">
-          <div class="cert-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <h4>VDE geprüft</h4>
-          <p>Arbeit nach VDE-Normen für maximale Sicherheit und Zuverlässigkeit</p>
-        </div>
-
-        <div class="cert-card anim-up anim-delay-1">
+        <a href="certs/sachverstaendigenfortbildung-raesfeld-2024.pdf" target="_blank" rel="noopener noreferrer" class="cert-card anim-up anim-delay-2">
           <div class="cert-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
           </div>
-          <h4>DGUV V3</h4>
-          <p>Berechtigt zur Prüfung elektrischer Betriebsmittel nach DGUV Vorschrift 3</p>
-        </div>
+          <h4>Sachverständigen&shy;fortbildung</h4>
+          <p>Akademie des Handwerks Schloss Raesfeld, 2024</p>
+          <span class="cert-link-hint">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            PDF ansehen
+          </span>
+        </a>
 
-        <div class="cert-card anim-up anim-delay-2">
+        <a href="certs/check-and-work-galeria-karstadt-kaufhof.pdf" target="_blank" rel="noopener noreferrer" class="cert-card anim-up">
           <div class="cert-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           </div>
-          <h4>Innungsbetrieb</h4>
-          <p>Mitglied der Elektroinnung Münster — höchste handwerkliche Standards</p>
-        </div>
+          <h4>CHECK AND WORK Auszeichnung</h4>
+          <p>Galeria Karstadt Kaufhof — 69 Filialen deutschlandweit</p>
+          <span class="cert-link-hint">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            PDF ansehen
+          </span>
+        </a>
+
+        <a href="certs/e3dc-s10-batteriespeicher-2022.pdf" target="_blank" rel="noopener noreferrer" class="cert-card anim-up anim-delay-1">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="6" width="22" height="12" rx="2"/><line x1="6" y1="10" x2="6" y2="14"/><line x1="23" y1="10" x2="23" y2="14"/></svg>
+          </div>
+          <h4>E3/DC S10 Batteriespeicher</h4>
+          <p>Installationsschulung, HagerEnergy GmbH, 2022</p>
+          <span class="cert-link-hint">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            PDF ansehen
+          </span>
+        </a>
+
+        <a href="certs/fibaro-smart-home-installer-2018.pdf" target="_blank" rel="noopener noreferrer" class="cert-card anim-up anim-delay-2">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h4>FIBARO Smart Home Installer</h4>
+          <p>Zertifizierter Systeminstallateur, 2018</p>
+          <span class="cert-link-hint">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            PDF ansehen
+          </span>
+        </a>
+
+        <a href="certs/ksb-zertifizierter-pumpenmonteur-2016.pdf" target="_blank" rel="noopener noreferrer" class="cert-card anim-up">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
+          </div>
+          <h4>KSB Zert. Pumpenmonteur</h4>
+          <p>KSB TrainingCenter — Pumpen-, Anlagen- &amp; Automatisierungstechnik, 2016</p>
+          <span class="cert-link-hint">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            PDF ansehen
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Partner ===== -->
+  <section class="partners section" id="partner">
+    <div class="container">
+      <div class="section-label anim-up">
+        <span class="section-num">04</span>
+        <span class="label">Partner</span>
+      </div>
+      <h2 class="section-title anim-up">Starke Partner für<br>beste Ergebnisse.</h2>
+
+      <div class="partners-grid">
+        <a href="https://www.kaiser-elektro.de" target="_blank" rel="noopener noreferrer" class="partner-card anim-up">
+          <div class="partner-logo">
+            <img src="images/partners/kaiser-elektro.png" alt="Kaiser Elektro" class="partner-logo-img" loading="lazy">
+          </div>
+          <div class="partner-card-text">
+            <h4>Kaiser Elektro</h4>
+            <p>Leerrohrsysteme &amp; Elektroinstallationsmaterial</p>
+          </div>
+        </a>
+
+        <a href="https://www.gautzsch-gruppe.de" target="_blank" rel="noopener noreferrer" class="partner-card anim-up anim-delay-1">
+          <div class="partner-logo">
+            <img src="images/partners/gautzsch.png" alt="Gautzsch" class="partner-logo-img" loading="lazy">
+          </div>
+          <div class="partner-card-text">
+            <h4>Gautzsch</h4>
+            <p>Elektrogroßhandel &amp; technische Beratung</p>
+          </div>
+        </a>
+
+        <a href="https://www.tesla.de" target="_blank" rel="noopener noreferrer" class="partner-card anim-up anim-delay-2">
+          <div class="partner-logo">
+            <img src="images/partners/tesla.svg" alt="Tesla" class="partner-logo-img" loading="lazy">
+          </div>
+          <div class="partner-card-text">
+            <h4>Tesla</h4>
+            <span class="partner-badge">Zertifiziert</span>
+            <p>Zertifizierter Installationsbetrieb für Wallbox &amp; Ladeinfrastruktur</p>
+          </div>
+        </a>
       </div>
     </div>
   </section>
@@ -489,7 +719,7 @@
   <section class="reviews section" id="bewertungen">
     <div class="container">
       <div class="section-label anim-up">
-        <span class="section-num">04</span>
+        <span class="section-num">05</span>
         <span class="label">Kundenstimmen</span>
       </div>
       <div class="reviews-header anim-up">
@@ -564,11 +794,11 @@
       <div class="area-inner">
         <div class="area-content anim-up">
           <div class="section-label">
-            <span class="section-num">05</span>
+            <span class="section-num">06</span>
             <span class="label">Einsatzgebiet</span>
           </div>
           <h2 class="section-title">Ihr Elektriker in Münster &amp; Umgebung.</h2>
-          <p>Wir sind in Münster und dem gesamten Münsterland für Sie im Einsatz. Ob Neubau, Sanierung oder Notfall — wir kommen schnell und zuverlässig zu Ihnen.</p>
+          <p>Wir sind in Münster und dem gesamten Münsterland für Sie im Einsatz. Ob Neubau, Sanierung oder Gewerbeprojekt — wir kommen schnell und zuverlässig zu Ihnen.</p>
 
           <div class="area-tags">
             <span class="area-tag">Münster</span>
@@ -626,7 +856,7 @@
           <a href="#home" class="nav-logo" aria-label="Elektro 24/7">
             <img src="images/logo.png" alt="Elektro 24/7" class="footer-logo-img">
           </a>
-          <p>Ihr zertifizierter Elektromeisterbetrieb in Münster. Professionell, zuverlässig und immer für Sie da.</p>
+          <p>Ihr zertifizierter Elektromeisterbetrieb in Münster. Professionell, zuverlässig und kompetent — für Gewerbe und Privat.</p>
           <div class="footer-socials">
             <a href="https://www.facebook.com/Elektro247" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
@@ -641,8 +871,9 @@
           <h4 class="footer-heading">Navigation</h4>
           <div class="footer-links">
             <a href="#leistungen">Leistungen</a>
-            <a href="#projekte">Projekte</a>
+            <a href="#projekte">Referenzen</a>
             <a href="#zertifikate">Zertifikate</a>
+            <a href="#partner">Partner</a>
             <a href="#bewertungen">Bewertungen</a>
             <a href="#kontakt">Kontakt</a>
           </div>
@@ -693,6 +924,17 @@
   (function() {
     'use strict';
 
+    // Banner dismiss
+    var banner = document.getElementById('site-banner');
+    var bannerClose = document.getElementById('banner-close');
+    if (sessionStorage.getItem('bannerDismissed')) {
+      banner.style.display = 'none';
+    }
+    bannerClose.addEventListener('click', function() {
+      banner.style.display = 'none';
+      sessionStorage.setItem('bannerDismissed', '1');
+    });
+
     // Mobile Navigation
     const toggle = document.querySelector('.nav-toggle');
     const mobileNav = document.querySelector('.nav-mobile');
@@ -732,6 +974,24 @@
         });
         ticking = true;
       }
+    });
+
+    // Services Filter
+    var filterBtns = document.querySelectorAll('.filter-btn');
+    var serviceCards = document.querySelectorAll('.service-card');
+    filterBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        filterBtns.forEach(function(b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        var filter = btn.getAttribute('data-filter');
+        serviceCards.forEach(function(card) {
+          if (filter === 'all' || card.getAttribute('data-segment').indexOf(filter) !== -1) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
     });
 
     // Intersection Observer for animations
